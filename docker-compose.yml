@@ -1,0 +1,6 @@
+web:
+  build: $PWD/docker
+  ports:
+    - 8000:80
+  volumes:
+    - $PWD/laravel:/var/www/html
