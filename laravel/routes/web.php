@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'AppController@index');
+Route::get('/{any}', 'AppController@index')->where('any', '.*');

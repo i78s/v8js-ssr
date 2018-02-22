@@ -2,6 +2,7 @@
   <div id="app">
     <my-header></my-header>
     {{ message }}
+    <router-view></router-view>
   </div>
 </template>
 <script>
