@@ -7,7 +7,7 @@
   <title>Vue/Laravel SSR App</title>
 </head>
 <body>
-<div id="app"></div>
-<script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
+{!! $ssr !!}
+<script src="{{ asset('js/entry-client.js') }}" type="text/javascript"></script>
 </body>
 </html>
