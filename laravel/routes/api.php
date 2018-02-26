@@ -13,6 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('posts', function() {
+  return [
+    [
+      'id' => 1,
+      'title' => 'たいとる',
+      'body' => 'ほんぶん'
+    ]
+  ];
 });
+
